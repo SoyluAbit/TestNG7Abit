@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GroupsDemoSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GroupsDemoTest(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <exclude name="broken"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.neotech.lesson01.TitleAndLogoValidation">
+        <methods>
+          <include name="titleValidation"/>
+        </methods>
+      </class> <!-- com.neotech.lesson01.TitleAndLogoValidation -->
+    </classes>
+  </test> <!-- GroupsDemoTest(failed) -->
+</suite> <!-- Failed suite [GroupsDemoSuite] -->

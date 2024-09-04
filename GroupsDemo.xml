@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GroupsDemoSuite">
+	<test thread-count="5" name="GroupsDemoTest">
+		<groups>
+			<run>
+				<include name="smoke"></include>
+				<exclude name="broken"></exclude>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.neotech.lesson03.GroupsDemo" />
+			<class name="com.neotech.lesson01.TestNGDemo" />
+			<class name="com.neotech.lesson01.TitleAndLogoValidation" />
+		</classes>
+	</test> <!--
+	GroupsDemoTest -->
+</suite> <!--
+GroupsDemoSuite -->
